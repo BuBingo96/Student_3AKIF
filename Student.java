@@ -2,20 +2,13 @@ public class Student
 {
     private String name;
     private int alter;
-    private boolean matura;
-
-    public Student()
-    {
-        setName("Thomas");
-        setAlter(40);
-        setMatura(true);
-    }
-
-    public Student(String name, int alter, boolean matura)
+    private String religion;
+    
+    public Student(String name, int alter, String religion)
     {
         setName(name);
         setAlter(alter);
-        setMatura(matura);
+        setReligion(religion);
     }
 
     public void setName(String name)
@@ -27,12 +20,12 @@ public class Student
     {
         this.alter = alter;
     }
-
-    public void setMatura(boolean matura)
+    
+    public void setReligion(String religion)
     {
-        this.matura = matura;
+        this.religion = religion;
     }
-
+    
     public String getName()
     {
         return name;
@@ -43,13 +36,13 @@ public class Student
         return alter;
     }
 
-    public boolean getMatura()
+    public String getReligion()
     {
-        return matura;
+         return religion;   
     }
-
+    
     public void printStudent()
     {
-        System.out.println("Student:\t" + name + "\t" + alter + "\t" + matura);
+        System.out.println("Student:\t" + name + "\t" + alter + "\t" + religion);
     }
 }
